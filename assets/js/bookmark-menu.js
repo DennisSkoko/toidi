@@ -45,6 +45,10 @@
         listEl.empty()
         tree.children.forEach(child => addItem(child))
         currentId = id
+
+        if (id !== 'toolbar_____') {
+          backBtnEl.removeClass('disabled')
+        }
       })
       .catch(err => {
         console.error('Can\'t access the bookmarks')
@@ -55,6 +59,7 @@
   backBtnEl.on('click', function () {
     if (currentId !== 'toolbar_____') {
       updateMenu('toolbar_____')
+      backBtnEl.addClass('disabled')
     }
   })
 

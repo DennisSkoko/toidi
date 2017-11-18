@@ -18,6 +18,7 @@ header::after {
   padding: 15px;
   height: 60.8px;
   width: 60px;
+  fill: rgb(120, 120, 120);
 }
 
 #back-btn:hover:not(.disabled) {
