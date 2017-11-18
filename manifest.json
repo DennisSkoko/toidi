@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Toidi",
+  "version": "1.0.0",
+  "description": "A simple bookmark extension for Mozilla Firefox",
+  "homepage_url": "https://github.com/DennisSkoko/toidi",
+  "icons": {
+    "48": "assets/img/bookmark.svg",
+    "96": "assets/img/bookmark.svg"
+  },
+  "browser_action": {
+    "default_icon": "assets/img/bookmark-dark.svg",
+    "theme_icons": [{
+        "light": "assets/img/bookmark-light.svg",
+        "dark": "assets/img/bookmark-dark.svg",
+        "size": 32
+    }],
+    "default_title": "Bookmarks",
+    "default_popup": "assets/bookmark-menu.html"
+  }
+}

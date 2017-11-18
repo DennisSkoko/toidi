@@ -1,0 +1,47 @@
+body {
+  width: 300px;
+}
+
+header > * {
+  float: left;
+}
+
+header::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#back-btn {
+  transform: rotate(180deg);
+  padding: 15px;
+  height: 60.8px;
+  width: 60px;
+}
+
+#back-btn:hover:not(.disabled) {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+
+#back-btn.disabled {
+  fill: rgb(235, 235, 235);
+}
+
+#title {
+  width: 220px;
+}
+
+.list-group-item {
+  border-right: none;
+  border-left: none;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item:first-child,
+.list-group-item:last-child {
+    border-radius: 0;
+}
