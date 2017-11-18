@@ -17,5 +17,8 @@
     }],
     "default_title": "Bookmarks",
     "default_popup": "assets/bookmark-menu.html"
-  }
+  },
+  "permissions": [
+    "bookmarks"
+  ]
 }

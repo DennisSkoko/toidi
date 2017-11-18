@@ -1,5 +1,6 @@
 body {
   width: 300px;
+  overflow-y: scroll;
 }
 
 header > * {
@@ -32,9 +33,14 @@ header::after {
   width: 220px;
 }
 
+.folder {
+    font-style: italic;
+}
+
 .list-group-item {
   border-right: none;
   border-left: none;
+  overflow: hidden;
 }
 
 .list-group-item:last-child {
